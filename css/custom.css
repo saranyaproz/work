@@ -1,0 +1,324 @@
+.navbar-custom {
+   /* color: #FFFFFF;*/
+    background-color: #008000;
+}
+.navbar
+{
+position: relative;
+min-height: 50px;
+margin-bottom: 20px;
+padding-top: 5px;
+border-radius:1px;
+}
+.container1
+{
+width: 100%;
+margin-left: 0px;
+margin-right: 0px;
+padding-left: 0px;
+padding-right: 0px;
+}
+/*#tab
+{
+  border-radius:0.25%;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}*/
+h4
+{
+  color: red;
+}
+.full {
+    width: 100%;    
+}
+.gap {
+  height: 30px;
+  width: 100%;
+  clear: both;
+  display: block;
+}
+.footer {
+  background: #EDEFF1;
+  height: auto;
+  padding-bottom: 30px;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #CCCCCC;
+  border-top: 1px solid #DDDDDD;
+}
+.footer p {
+  margin: 0;
+}
+.footer img {
+  max-width: 100%;
+}
+.footer h3 {
+  border-bottom: 1px solid #BAC1C8;
+  color: #54697E;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  padding: 40px 0 10px;
+  text-transform: uppercase;
+}
+.footer ul {
+  font-size: 13px;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 15px;
+  color: #7F8C8D;
+}
+.footer ul li a {
+  padding: 0 0 5px 0;
+  display: block;
+}
+.footer a {
+  color: #78828D
+}
+.supportLi h4 {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: normal;
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+}
+.newsletter-box input#appendedInputButton {
+  background: #FFFFFF;
+  display: inline-block;
+  float: left;
+  height: 30px;
+  clear: both;
+  width: 100%;
+}
+.newsletter-box .btn {
+  border: medium none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  height: 40px;
+  padding: 0;
+  width: 100%;
+  color: #fff;
+}
+.newsletter-box {
+  overflow: hidden;
+}
+.bg-gray {
+  background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
+  box-shadow: 0 1px 0 #B4B3B3;
+}
+.social li {
+  background: none repeat scroll 0 0 #B5B5B5;
+  border: 2px solid #B5B5B5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 8px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 36px;
+  transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+}
+.social li:hover {
+  transform: scale(1.15) rotate(360deg);
+  -webkit-transform: scale(1.1) rotate(360deg);
+  -moz-transform: scale(1.1) rotate(360deg);
+  -ms-transform: scale(1.1) rotate(360deg);
+  -o-transform: scale(1.1) rotate(360deg);
+}
+.social li a {
+  color: #EDEFF1;
+}
+.social li:hover {
+  border: 2px solid #2c3e50;
+  background: #2c3e50;
+}
+.social li a i {
+  font-size: 16px;
+  margin: 0 0 0 5px;
+  color: #EDEFF1 !important;
+}
+.footer-bottom {
+  background: #E3E3E3;
+  border-top: 1px solid #DDDDDD;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer-bottom p.pull-left {
+  padding-top: 6px;
+}
+.payments {
+  font-size: 1.5em; 
+}
+#circle {
+    width: 120px;
+    height: 120px;
+    background: #7fee1d;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+     margin-left: 10px;
+}
+#square {
+    width: 120px;
+    height: 120px;
+    background: #f447ff;
+     margin-left: 10px;
+}
+#ovel {
+    width: 200px;
+    height: 100px;
+    background: #e9337c;
+    -webkit-border-radius: 100px / 30px;
+    -moz-border-radius: 100px / 30px;
+    border-radius: 100px / 30px;
+    margin-left: 10px;
+}
+.outer {
+                background-color:#32CD32;
+                width:245px; /* You can define it by % also */
+                height:270px; /* You can define it by % also */
+                position:relative;
+                border:1px solid #fff;
+                border-radius: 50%;
+                 margin-left: 13%;
+                 /* -webkit-box-shadow: 0 15px 20px #777;
+  -moz-box-shadow: 0 15px 20px #777;
+  box-shadow: 0 15px 20px #777;
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  transform: rotate(50deg);*/
+}
+
+.inner-1 {
+               /* background-color:yellow;
+                top: 25%; left:25%; /* of the container *
+                width:50%; /* of the container 
+                height:50%; /* of the container *
+                position: relative;
+                border:1px solid black;
+                border-radius: 50%;*/
+                border-radius: 80px;
+  background: #008000;
+  height: 175px;
+  width: 75px;
+      top: 18%; left:35%;
+      position: relative;
+      border: 1px solid #fff;
+
+}
+.inner-2
+{
+
+  border-radius: 1px;
+  background: #FFFF99;
+  height: 75px;
+  width: 25px;
+ margin-left: 45%;
+ margin-top: -30%;
+ position: relative;
+  border: 1px solid #fff;
+}
+.outer-1 {
+                background-color:blue;
+                width:400px; /* You can define it by % also */
+                height:400px; /* You can define it by % also*/
+                position:relative;
+                border:1px solid black;
+                border-radius: 50%;
+}
+#inner-1 {
+                background-color:lime;
+                top: 10%; left:10%; /* of the container */
+                width:80%; /* of the outer-1 */
+                height:80%; /* of the outer-1 */
+                position: absolute;
+                border:1px solid black;
+                border-radius: 50%;
+}
+#inner-2 {
+                background-color:yellow;
+                top: 20%; left:20%; /* of the container */
+                width:60%; /* of the inner-1 */
+                height:60%; /* of the inner-1 */
+                position: absolute;
+                border:1px solid black;
+                border-radius: 50%;
+}
+#inner-3 {
+                background-color:red;
+                top: 30%; left:30%; /* of the container */
+                width:40%; /* of the inner-1 */
+                height:40%; /* of the inner-1 */
+                position: absolute;
+                border:1px solid black;
+                border-radius: 50%;
+}
+#inner-4 {
+                background-color:blue;
+                top: 40%; left:40%; /* of the container */
+                width:20%; /* of the inner-1 */
+                height:20%; /* of the inner-1 */
+                position: absolute;
+                border:1px solid black;
+                border-radius: 50%;
+}
+panel-body{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+.panel-success > .panel-heading{
+  background:#3CB371;
+  color: #fff;
+}
+.panel-success
+{
+  border-color: #3CB371;
+}
+.title{
+  background: url(frnd.png);
+}
+.panel-warning{
+  border-color: #FFA500;
+}
+.panel-warning > .panel-heading
+{
+  background:#FFA500; 
+  color:#fff;
+}
+.panel-danger
+{
+  border-color:#E52100;
+}
+.panel-danger > .panel-heading
+{
+  background: #E52100;
+  color: #fff;
+}
+.progress-label {
+    float: left;
+    margin-right: 1em;
+}
+ul > li.active
+{
+  background: #f98800;
+  border-right: 1px solid #f98800;
+  border-top: 1px solid #f98800
+}

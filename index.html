@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-combined.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="icofont/css/icofont.css">
+<!--js Links-->
+
+<link rel="stylesheet" href="css/custom.css">
+<script type="text/javascript">
+  $(document).ready(function(){
+ $("p1").hide();
+    $("#hide").click(function(){
+        $("p1").hide();
+        $("h").show();
+    });
+    $("#show").click(function(){
+        $("p1").show();
+        $("h").hide();
+    });
+
+});
+ 
+</script>
+<style>
+.pan {
+ /* text-align:right;*/
+  font-size: 14px;
+  color: #E52100;
+/*  margin-top: -50px;
+*/
+}
+.pan1 {
+ /* text-align:right;*/
+  font-size: 14px;
+  color: #E52100;
+  margin-top: -50px;
+  margin-left: 100px;
+
+}
+</style>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("April 6, 2017 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + " D : " +  hours + " H : "
+    + minutes + " M : " + seconds +" S ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+
+</head>
+ 
+<body >
+
+  <div class="container1">
+    
+    <div class="navbar navbar-custom">
+      <ul class="nav navbar-nav navbar-right"">      
+        <li class="active"><a href='#/home'>Home</a></li>
+        <li class=""><a href='about.html'>About Us</a></li>
+        <li class=""><a href='contact.html'>Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+   <div class="container">
+
+  <ul class="nav nav-tabs nab">
+    <li class="active"><a data-toggle="tab" href="#home">Cricket</a></li>
+    
+    <li><a data-toggle="tab" href="#menu2">Game 2</a></li>
+    <li><a data-toggle="tab" href="#menu3">Game 3</a></li>
+  </ul>
+
+  <div class="tab-content" id="tab">
+    <div id="home" class="tab-pane fade in active">
+    <p> <div class="row col-sm-3">
+        <div class="form-group">
+            <select class="form-control col-sm-4" id="sel1">
+              <option>option1</option>
+              <option>option2</option>
+              <option>option1</option>
+              <option>option1</option>
+            </select>
+        </div>
+      </div></p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container">
+<div class="col-sm-3">
+
+          <div class="panel panel-default">
+        <div class="panel-heading"><i class="fa fa-clock-o pan"  id="demo" ></i></div>
+<div class="panel-body"><img alt="French Flag" src="famfamfam_flag_icons/png/in.png" width="20" height="15"> Vs <img alt="French Flag" src="famfamfam_flag_icons/png/au.png" width="20" height="15"><p style="margin-left: 10px">Ind  Aus</p><p class="pan1">Third test  <button class="btn btn-primary">Join</button></p></div></div></div></div>
+
+
+ <!-- Adverisement-->
+  <div class="container">
+    <div class="row ">
+       <div class="col-sm-4">
+          <div class="panel panel-warning">
+            <div class="panel-heading"><h6 class="progress-label">Grand league</h6>84545428<div class="progress" style="height: 3px">
+  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="4"
+  aria-valuemin="0" aria-valuemax="5" style="width:50px">
+
+  </div>
+</div></div>
+            <div class="panel-body"><div class="text-left">Win rs.2,00,000.00</div><div class="left">pay rs.30.00</div></div>
+          </div>
+        </div>
+      <div class="col-sm-4">
+          <div class="panel panel-danger">
+            <div class="panel-heading">Panel Header</div>
+            <div class="panel-body"><div class="text-left">Win rs.2,00,000.00</div><div class="left">pay rs.30.00</div></div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="panel panel-success">
+            <div class="panel-heading title">Panel Header</div>
+          <div class="panel-body"><div class="text-left">Win rs.2,00,000.00</div><div class="left">pay rs.30.00</div></div>
+        </div>
+     </div>
+    </div>
+  </div>
+  <!-- /End of Advertisement-->
+  <div class="container">
+       <div class="row col-xl-12">   
+    <!--  <p1>If you click on the "Hide" button, I will disappear.</p1>
+        <h> I will disappear.</h>
+ -->
+ <div class="col-md-8">
+  <ul class="nav nav-tabs nab">
+    <li class="active"><a data-toggle="tab"  id="hide" href="#public" type="button">Public</a><!-- <button id="hide" data-toggle="tab" href="#public">Total match</button> --></li>
+    
+    <li><a data-toggle="tab"  id="show" href="#private" type="button">My leagues</a><!-- <button id="show" data-toggle="tab" href="#private">join match</button> --></a></li>
+  
+  </ul>
+
+  <div class="tab-content" id="tab">
+    <div id="public" class="tab-pane fade in active">
+    <br>
+    <div class="col-xl-8" style="background: #E52100">
+
+      
+        <div class=" panel-body">
+        <div class="col-sm-1"><i class="fa fa-filter" style="font-size: 28px"></i>Filter</div>
+       
+         <div class="col-sm-3">
+         <select class="form-control" id="sel1">
+              <option>option1</option>
+              <option>option2</option>
+              <option>option1</option>
+              <option>option1</option>
+            </select>
+        </div>
+        <div class="col-sm-3">
+         <select class="form-control" id="sel1">
+              <option>option1</option>
+              <option>option2</option>
+              <option>option1</option>
+              <option>option1</option>
+            </select>
+        </div>
+        <div class="col-sm-3">
+         <select class="form-control" id="sel1">
+              <option>option1</option>
+              <option>option2</option>
+              <option>option1</option>
+              <option>option1</option>
+            </select>
+        </div>
+        <div class="col-sm-2"><a href="#">Reset</a></div>
+        </div>
+      </div>
+        <br>
+      
+    <h>
+      <div class="col-sm-3">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-3">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-3">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-3">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-3">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-3">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-3">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-3">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-3">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-3">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-3">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-3">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-3">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-3">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-3">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-3">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </h>
+ 
+ 
+        </div>
+    <div id="private" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+   
+  </div>
+</div>
+
+
+<div class="col-sm-4 col-md-4 col-xs-4">
+  
+     <div class="panel panel-default">
+          <div class="panel-heading"></div>
+      <div class="panel-body">
+ <div class="outer">
+         <div class="inner-1">&nbsp;</div>
+         <div class="inner-2">
+            &nbsp;
+            </div>
+</div> </div>
+</div>
+</div>
+<h>
+ <div class="col-sm-2">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+   <div class="col-sm-2">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-2">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-2">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-2">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-2">
+        <div class="panel panel-primary">
+          <div class="panel-body"><h4>Win rs.100.00</h4>
+            <p>pay rs.10.00</p>
+            <div class="progress" style="height: 5px">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="7"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70px">
+              </div>
+            </div>
+            <div class="text-right"><a>
+              <i class="icofont icofont-brand-hallmark icon"></i></a>
+              <button class="btn btn-primary">join+</button>
+            </div>
+          </div>
+        </div>
+      </div></div>
+    </h>
+  </div></div><br>
+<footer>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3  ">
+                    <h3>About</h3>
+                    <ul>
+                        <li> <a href="#">Software projects</a> </li>
+                        <li> <a href="#">Realtime projects</a> </li>
+                        <li> <a href="#">ieee projects</a> </li>
+                        <li> <a href="#"></a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li> <a href="#">Home</a> </li>
+                        <li> <a href="#">Contact us</a> </li>
+                        <li> <a href="#">services</a> </li>
+                       
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3>Address</h3>
+                    <ul>
+                      <li> <a href="#">Proz solutions</a> </li>
+                        <li> <a href="#">Salem road</a> </li>
+                        <li> <a href="#">old rdo office</a> </li>
+                        <li> <a href="#">Near by kaveri furniture</a> </li>
+                        <li> <a href="#">Namakkal</a> </li>
+                    </ul>
+                </div>
+               
+                <div class="col-lg-3 ">
+                    <h3>Follow us</h3>
+                    <ul class="social">
+                        <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
+    </div>
+    <!--/.footer-->
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left"> Copyright © All right reserved. </p>
+        </div>
+    </div>
+    <!--/.footer-bottom--> 
+</footer>
+
+</body>
+
+</html>
